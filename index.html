@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="refresh" content="1000">
+        <meta http-equiv="refresh" content="1">
         <meta charset="utf-8">
         <style>
             p {
                 font-size: 20px;
                 font-family:'Microsoft Yahei', sans-serif;
+                padding-left: 20px;
             }
             body {
                 background-image: linear-gradient(-90deg, #EEEEEE 0%, #FFFFFF 100%);
                 text-align:center;
             }
-            .title-1 {
-                color: #000000;
-                text-align:center;
-                vertical-align: middle;
-                margin: 0px;
-                font-size: 35px;
+            div {
+                width: 1000px;
+                background-color: #DDDDDD;
+                color: #111111;
+                border-radius: 20px;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 25px;
+                padding-left: 30px;
+                margin-top: 20px;
+                box-shadow: 10px 10px 5px #444444;
             }
-            .title-2 {
+            .title {
                 color: #111111;
                 text-align:left;
                 vertical-align: middle;
@@ -28,273 +34,201 @@
             }
             .right {
                 margin-top: -48px;
-                margin-right: 80px;
-                float: right;
+                margin-left: 660px;
+                float: left;
+            }
+            .line {
+                background-color: #DDDDDD;
+                width: 1000px;
+                height: 45px;
+                justify-content: center;
+                border-radius: 10px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                box-shadow: 10px 10px 5px #555555;
+            }
+            .detail {
+                background-color: #BBBBBB;
+                font-size: 20px;
+                width: 940px;
+                height: 30px;
+                justify-content: center;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 40px;
+                margin-left: 0px;
+                box-shadow: 7px 7px 4px #555555;
             }
             #information-block-bacground {
-                background-color: #DDDDDD;
-                color: #111111;
                 width: 740px;
-                height: 250px;
+                height: 240px;
                 margin-left: 220px;
-                margin-top: 30px;
-                border-radius: 20px;
+                margin-top: -270px;
+                margin-bottom: 10px;
                 text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 50px;
-                box-shadow: 10px 10px 5px #444444;
             }
             #information-block0 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 985px;
-                height: 270px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                margin-top: 20px;
-                box-shadow: 10px 10px 5px #444444;
+                height: 330px;
             }
             #information-block1 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 985px;
                 height: 200px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                margin-top: 20px;
-                box-shadow: 10px 10px 5px #444444;
             }
             #information-block2 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 955px;
                 height: 1050px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                margin-top: 20px;
-                padding-right: 30px;
-                box-shadow: 10px 10px 5px #444444;
             }
             #information-block3 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 955px;
                 height: 610px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin-top: 20px;
-                box-shadow: 10px 10px 5px #444444;
             }
             #information-block4 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 955px;
                 height: 530px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin-top: 20px;
-                box-shadow: 10px 10px 5px #444444;
             }
             #information-block5 {
-                background-color: #DDDDDD;
-                color: #111111;
-                width: 955px;
                 height: 330px;
-                border-radius: 20px;
-                text-align: left;
-                padding-top: 10px;
-                padding-bottom: 25px;
-                padding-left: 30px;
-                padding-right: 30px;
-                margin-top: 20px;
-                box-shadow: 10px 10px 5px #444444;
-            }
-            #main {
-                width: 1000px;
-                height: 4000px;
-                margin-top: 0px;
             }
             #self-picture {
                 background-color: #999999;
                 width: 170px;
                 height: 250px;
-                padding: 10px;
-                border-radius: 10px;
-                float: left;
-                box-shadow: 10px 10px 5px #454545;
-
-            }
-            #startLine {
-                background-color: #DFDFDF;
-                width: 1000px;
-                height: 50px;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 10px;
-                margin-top: 40px;
-                margin-bottom: 30px;
-                box-shadow: 10px 10px 5px #555555;
-            }
-            #Line {
-                background-color: #DFDFDF;
-                width: 1000px;
-                height: 50px;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 10px;
+                margin-left: -800px;
                 margin-top: 50px;
-                box-shadow: 10px 10px 5px #666666;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 5px #454545;
             }
             #detail-1 {
-                background-color: #BBBBBB;
-                font-size: 20px;
-                width: 940px;
-                height: 30px;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 10px;
-                box-shadow: 7px 7px 4px #777777;
+                margin-top: 10px;
             }            
             #detail-2 {
-                background-color: #BBBBBB;
-                font-size: 20px;
-                width: 940px;
-                height: 30px;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 10px;
-                margin-top: 40px;
-                box-shadow: 7px 7px 4px #777777;
+                margin-top: 30px;
+            }
+            #back-ground {
+                margin-left: 250px;
+            }
+            #school {
+                margin-left: 750px;
             }
         </style>
     </head>
     <body>
         <center>
-        <div id="main">
-        <div id="startLine"><p class="title-2">基础信息</p></div>
+        <div class="line"><p class="title">基础信息</p></div>
+
         <div id="self-picture"><img src='http://175.24.78.41/2.jpg' height="100%"></div>
+
         <div id="information-block-bacground">
                 <p>姓名： 谢万森</p>
-                <p class="right">政治面貌： 党员发展对象&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="right" id="back-ground">政治面貌： 党员发展对象</p>
                 <p>年龄： 21</p>
-                <p class="right">联系方式： 15254680164&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="right" id="back-ground">联系方式： 15254680164</p>
                 <p>民族： 汉族</p>
-                <p class="right">学校邮箱： wansen.xie@mails.qust.edu.cn&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="right" id="back-ground">学校邮箱： wansen.xie@mails.qust.edu.cn</p>
                 <p>籍贯： 山东东营</p>
-                <p class="right">工作邮箱： xiewansen@outlook.com&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="right" id="back-ground">工作邮箱： xiewansen@outlook.com</p>
                 <p>学历： 本科在读</p>
-                <p class="right">Github：https://github.com/Schihewansenn</p>
+                <p class="right" id="back-ground">Github：https://github.com/Schihewansenn</p>
 
         </div>
-        <div id="Line"><p class="title-2">教育经历</p></div>
+
+        <div class="line"><p class="title">教育经历</p></div>
                 <div id="information-block0">
-                <p id="detail-1">高等教育（2017 - 现在）</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学，高密校区化工系，化学工程与工艺，工学学士（在读）</p>
-                <p id="detail-2">高中（2014 - 2017）</p>
-                <p>&nbsp&nbsp&nbsp&nbsp山东省广饶县第一实验中学</p>
+                <p class="detail" id="detail-1">高等教育</p>
+                <p>（2017 - 2021）青岛科技大学，高密校区化工系，化学工程与工艺专业</p>
+                <p class="right" id="school">工学学士（在读）</p>
+                <p class="detail" id="detail-2">基础教育</p>
+                <p>（2014 - 2017）山东省广饶县第一中学</p>
+                <p>（2010 - 2014）山东省广饶县第一实验中学</p>
+                <p>（2005 - 2010）山东省广饶县第一实验小学</p>
         </div>
-        <div id="Line"><p class="title-2">技能</p></div>
+
+        <div class="line"><p class="title">技能</p></div>
                 <div id="information-block1">
-                <p>&nbsp&nbsp&nbsp&nbspHyperChem、Gaussian（计算化学软件）</p> 
+                <p>HyperChem、Gaussian（计算化学软件）</p> 
                 <p class="right">Python 科学计算与机器学习</p>
-                <p>&nbsp&nbsp&nbsp&nbspChemDraw、Olex2（单晶结构解析）</p>
-                <p class="right">Matlab 建模分析&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbspAspenPlus（化工过程模拟软件）</p>
-                <p class="right">HTML 基本网站搭建&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbspAutoCAD、3DsMax（工程制图软件）</p>
-                <p class="right">Linux 服务器的运维&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p>ChemDraw、Olex2（单晶结构解析）</p>
+                <p class="right">Matlab 建模分析</p>
+                <p>AspenPlus（化工过程模拟软件）</p>
+                <p class="right">HTML 基本网站搭建</p>
+                <p>AutoCAD、3DsMax（工程制图软件）</p>
+                <p class="right">Linux 服务器的运维</p>
         </div>
-        <div id="Line"><p class="title-2">综合情况</p></div>
+
+        <div class="line"><p class="title">综合情况</p></div>
                 <div id="information-block2">
-                <p id="detail-1">学术背景</p>
-                <p>&nbsp&nbsp&nbsp&nbspGPA 3.42</p>
+                <p class="detail" id="detail-1">学术背景</p>
+                <p>GPA 3.42</p>
                 <p class="right">化学类专业课平均分 90.4</p>
-                <p>&nbsp&nbsp&nbsp&nbsp专业排名 6/61</p>
+                <p>专业排名 6/61</p>
                 <p class="right">计算机二级 C 语言 88分&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp平均分 85.6</p>
-                <p class="right">英语四级 451分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p>平均分 85.6</p>
+                <p class="right">英语四级 451分</p>
 
-                <p id="detail-2">评优称号</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2018 年度优秀共青团员称号</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2019 年度十佳科技社团干部</p>
+                <p class="detail" id="detail-2">评优称号</p>
+                <p>青岛科技大学 2018 年度优秀共青团员称号</p>
+                <p>青岛科技大学 2019 年度十佳科技社团干部</p>
 
-                <p id="detail-2">奖学金</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2017-2018 第一学期</p>
-                <p class="right">校三等综合奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2017-201 8第二学期</p>
-                <p class="right">校三等综合奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2018-2019 第一学期</p>
-                <p class="right">校三等综合奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2018-2019 第二学期</p>
-                <p class="right">校三等综合奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2019-2020 第一学期</p>
-                <p class="right">校三等综合奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛科技大学 2019 年</p>
-                <p class="right">科技创新奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp金城医药</p>
-                <p class="right">企业奖学金&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="detail" id="detail-2">奖学金</p>
+                <p>青岛科技大学 2017-2018 第一学期</p>
+                <p class="right">校三等综合奖学金</p>
+                <p>青岛科技大学 2017-201 8第二学期</p>
+                <p class="right">校三等综合奖学金</p>
+                <p>青岛科技大学 2018-2019 第一学期</p>
+                <p class="right">校三等综合奖学金</p>
+                <p>青岛科技大学 2018-2019 第二学期</p>
+                <p class="right">校三等综合奖学金</p>
+                <p>青岛科技大学 2019-2020 第一学期</p>
+                <p class="right">校三等综合奖学金</p>
+                <p>青岛科技大学 2019 年</p>
+                <p class="right">科技创新奖学金</p>
+                <p>金城医药</p>
+                <p class="right">企业奖学金</p>
 
-                <p id="detail-2">社会活动经历</p>
-                <p>&nbsp&nbsp&nbsp&nbsp2017.09-2020.06 青岛科技大学基础化学实验中心</p>
-                <p class="right">实验助理&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                <p>&nbsp&nbsp&nbsp&nbsp2018.09-2019.06 青岛科技大学化学爱好者协会</p>
-                <p class="right">社团社长&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="detail" id="detail-2">社会活动经历</p>
+                <p>2017.09-2020.06 青岛科技大学基础化学实验中心</p>
+                <p class="right">实验助理</p>
+                <p>2018.09-2019.06 青岛科技大学化学爱好者协会</p>
+                <p class="right">社团社长</p>
                 <p>&nbsp&nbsp&nbsp&nbsp2018.01 山东省广饶县图书馆</p>
-                <p class="right">志愿者&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="right">志愿者</p>
         </div>
-                <div id="Line"><p class="title-2">本科竞赛</p></div>
+
+                <div class="line"><p class="title">本科竞赛</p></div>
                 <div id="information-block3">
-                <p id="detail-1">国家级</p>
-                <p>&nbsp&nbsp&nbsp&nbsp全国大学生化工设计竞赛(全国赛区) </p> <p class="right">三等奖</p>
-                <p id="detail-1">省区级</p>
-                <p>&nbsp&nbsp&nbsp&nbsp山东省大学生大学物理竞赛</p> <p class="right">一等奖</p>
-                <p>&nbsp&nbsp&nbsp&nbsp山东省大学生化学实验技能操作竞赛</p> <p class="right">一等奖</p>                
-                <p>&nbsp&nbsp&nbsp&nbsp山东省大学生化工过程实验技能竞赛</p> <p class="right">二等奖</p>
-                <p>&nbsp&nbsp&nbsp&nbsp全国大学生化工设计竞赛(华北赛区) </p> <p class="right">二等奖</p>
-                <p>&nbsp&nbsp&nbsp&nbsp山东省大学生移动互联创新大赛 </p> <p class="right">三等奖</p>
-                <p>&nbsp&nbsp&nbsp&nbsp山东省大学生数学建模竞赛</p> <p class="right">三等奖</p>
-                <p id="detail-2">市县级</p>
-                <p>&nbsp&nbsp&nbsp&nbsp青岛市驻青高校化学实验技能操作竞赛 </p> <p class="right">二等奖</p>
-                
+                <p class="detail" id="detail-1">国家级</p>
+                <p>全国大学生化工设计竞赛（全国赛区）</p> <p class="right">三等奖</p>
+                <p class="detail" id="detail-2">省区级</p>
+                <p>山东省大学生大学物理竞赛</p> <p class="right">一等奖</p>
+                <p>山东省大学生化学实验技能操作竞赛</p> <p class="right">一等奖</p>
+                <p>山东省大学生化工过程实验技能竞赛</p> <p class="right">二等奖</p>
+                <p>全国大学生化工设计竞赛（华北赛区）</p> <p class="right">二等奖</p>
+                <p>山东省大学生移动互联创新大赛 </p> <p class="right">三等奖</p>
+                <p>山东省大学生数学建模竞赛</p> <p class="right">三等奖</p>
+                <p class="detail" id="detail-2">市县级</p>
+                <p>青岛市驻青高校化学实验技能操作竞赛 </p> <p class="right">二等奖</p>  
         </div>
-        <div id="Line"><p class="title-2">中学竞赛</p></div>
+
+        <div class="line"><p class="title">中学竞赛</p></div>
+
         <div id="information-block5">
-            <p id="detail-1">国家级</p>
-                <p>&nbsp&nbsp&nbsp&nbsp第 30 届中国奥林匹克化学竞赛</p>
+            <p class="detail" id="detail-1">国家级</p>
+                <p>第 30 届中国奥林匹克化学竞赛</p>
                 <p class="right">一等奖</p>
-                <p>&nbsp&nbsp&nbsp&nbsp第 29 届中国奥林匹克化学竞赛</p>
+                <p>第 29 届中国奥林匹克化学竞赛</p>
                 <p class="right">二等奖</p>
-            <p id="detail-2">省区级</p>
-                <p>&nbsp&nbsp&nbsp&nbsp2016 年山东省中学生生物学联赛</p>
+            <p class="detail" id="detail-2">省区级</p>
+                <p>2016 年山东省中学生生物学联赛</p>
                 <p class="right">二等奖</p>
         </div>
-        <div id="Line"><p class="title-2">科研经历</p></div>
+        <div class="line"><p class="title">科研经历</p></div>
                 <div id="information-block4">
-                <p id="detail-1">2018.03 ~ 2018.09</p>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp进入本校聂广明副教授课题组，跟随郭庆福老师参与工作《过三氟化硼乙醚溶液中高性能聚（3-甲基噻吩）的电化学制备及其表征》，并参加了 2018 年山东省大学生移动互联创新大赛。
-                <p id="detail-2">2018.10 ~ 2019.05</p>
-                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp进入中国石油大学材料学院的有序孔材料与应用实验室，跟随孙道峰教授参与《螺二芴基超分子化合物的制备、表征与性能研究》。主要成果参加了 2019 年大学生挑战杯。</p>
-                <p id="detail-2">2019.05 ~ 2020.06</p>
-                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在孙道峰导师的建议下更换方向，参与高效分离低碳烃的铜基 MOF 材料的合成工作，主要贡献包括有有机配体（前驱体）的合成、MOF 晶体的生长、晶体荧光性能的测试与气体吸附性能测试的工作。相关论文一篇(未挂名) : Solvent-induced framework-interpenetration isomers of Cu MOFs for efficient light hydrocarbon separation. </p>
-        </div>
+                <p class="detail" id="detail-1">2018.03 ~ 2018.09</p>
+                进入本校聂广明副教授课题组，跟随郭庆福老师参与工作《过三氟化硼乙醚溶液中高性能聚（3-甲基噻吩）的电化学制备及其表征》，并参加了 2018 年山东省大学生移动互联创新大赛。
+                <p class="detail" id="detail-2">2018.10 ~ 2019.05</p>
+                <p>进入中国石油大学材料学院的有序孔材料与应用实验室，跟随孙道峰教授参与《螺二芴基超分子化合物的制备、表征与性能研究》。主要成果参加了 2019 年大学生挑战杯。</p>
+                <p class="detail" id="detail-2">2019.05 ~ 2020.06</p>
+                <p>在孙道峰导师的建议下更换方向，参与高效分离低碳烃的铜基 MOF 材料的合成工作，主要贡献包括有有机配体（前驱体）的合成、MOF 晶体的生长、晶体荧光性能的测试与气体吸附性能测试的工作。相关论文一篇(未挂名) : Solvent-induced framework-interpenetration isomers of Cu MOFs for efficient light hydrocarbon separation. </p>
         </div>
         </center>
     </body>
